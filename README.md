@@ -1,12 +1,11 @@
 # Docker file for running VisemeNet inference.
 
-VisemeNet https://github.com/yzhou359/VisemeNet_tensorflow
+It looks VisemeNet https://github.com/yzhou359/VisemeNet_tensorflow only runs in CUDA 8.0 environment, so I made a Docker file to run VisemeNet in CUDA 8.0 environment.
 
 ## Requirements
 
-* Host: nvidia driver installed + CUDA 8/9(10 may work?) 
-* Docker
-* nvidia-docker2
+* Host: nvidia driver installed + CUDA 8 or 9(10 may work?) 
+* nvidia-docker2 https://github.com/NVIDIA/nvidia-docker
 
 We've confirmed Ubutu 16.06 + CUDA 9.2 works well for the host.
 
